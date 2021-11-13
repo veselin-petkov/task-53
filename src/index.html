@@ -50,9 +50,13 @@
       var x = document.querySelectorAll(".product");
       //x.forEach(element => {x.setAttribute("data-price");
       //});
+      var y =document.querySelectorAll(".price");
       for (let index = 0; index < x.length; index++) {
-        x[index].setAttribute("data-price", 0);
+        for (let j = 0; j < array.length; j++) {
+        
+        x[index].setAttribute("data-price", y[j]);
       }
+    }
     </script>
   </body>
 </html>
