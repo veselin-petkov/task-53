@@ -52,9 +52,8 @@
       //});
       var y =document.querySelectorAll(".price");
       for (let index = 0; index < x.length; index++) {
-        for (let j = 0; j < array.length; j++) {
-        
-        x[index].setAttribute("data-price", y[j]);
+        for (let j = 0; j < y.length; j++) {
+        x[index].setAttribute("data-price", y[j].innerHTML);
       }
     }
     </script>
